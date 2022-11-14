@@ -1,0 +1,12 @@
+---
+# tasks file for docker-registry
+- name: log into docker hub registy
+  docker_login:
+    username: wael22122212
+    password: BlackOps3
+- name: Tag and push to docker hub
+  docker_image:
+    name: devops
+    repository: wael22122212/devops
+    push: yes
+    source: local
