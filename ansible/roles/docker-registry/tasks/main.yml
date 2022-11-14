@@ -2,11 +2,11 @@
 # tasks file for docker-registry
 - name: log into docker hub registy
   docker_login:
-    username: cyrine123
+    username: cyrinebh123
     password: sbh18051998
 - name: Tag and push to docker hub
   docker_image:
     name: devops
-    repository: cyrine123/devops
+    repository: cyrinebh123/devops
     push: yes
     source: local
